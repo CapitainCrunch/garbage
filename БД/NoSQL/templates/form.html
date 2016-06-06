@@ -1,0 +1,18 @@
+﻿<html>
+<head>
+<title>Запросы к БД</title>
+</head>
+<body>
+<form>
+В колонке по товарам <input type="text" name="good"><br>
+В колонке по описанию <input type="text" name="description"><br>
+<input type="submit" value="Отправить">
+</form>
+<p>Нашлось в базе</p>
+{% for key in found %}
+<p><font color="red">{{key}}</p>
+{% endfor %}
+<p><a href="/search_form">Поиск в БД</a></p>
+<p><a href="/delete_all_es">Удалить все</a></p>
+<p><a href="/insert">Заполнить БД</a></p>
+</body></html>

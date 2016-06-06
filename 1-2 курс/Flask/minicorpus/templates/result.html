@@ -1,0 +1,19 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>Поиск в НКРЯ(У)</title>
+</head>
+<body>
+<p>Добро пожаловать, {{ user }}!</p>
+{% if message %}
+<h2><font color="red"> {{ message }} </font></h2>
+{% endif %}
+<h1>Результаты поиска: {{ sentences|length }} результатов.</h1>
+{% for sentence in sentences %}
+<p>{{ sentence|safe }}</p>
+<hr>
+{% endfor %}
+
+<a href="search">Новый поиск</a>
+</body>
+</html>

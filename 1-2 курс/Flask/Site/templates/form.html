@@ -1,0 +1,19 @@
+﻿<html>
+<head>
+<title>Учет гостей</title>
+</head>
+<body>
+<form>
+Name: <input type="text" name="name"><br>
+<input type="submit" value="Input">
+</form>
+<table border='1'>
+<dl>
+{% for key, value in _DICT.items() %}
+<tr><td><input type="checkbox" name="<dt>{{key}}</dt>"</td><td><dt>{{key}}</dt></td><td><font color="blue"><dd>{{value}}</dd></font></td></tr>
+{% endfor %}
+</dl>
+<input type="submit" value="Exit">
+</table>
+</body>
+</html>

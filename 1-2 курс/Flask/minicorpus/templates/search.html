@@ -1,0 +1,18 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>Поиск в НКРЯ(У)</title>
+</head>
+<body>
+<h1>Поиск в НКРЯ(У)</h1>
+<p>Добро пожаловать, <font color="red">{{ user }}</font>! (<a href="login">вход</a>)</p>
+<p>Что ты хочешь найти?</p>
+<form action="result">
+Словоформа: <input type="text" name="word"><br>
+Количество букв: <input type="text" name="length"><br>
+<input type="checkbox" name="capital"> искать слова с большой буквы
+<input type="submit" value="Искать">
+</form>
+<a href="search">Очистить</a>
+</body>
+</html>
